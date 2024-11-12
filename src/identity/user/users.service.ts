@@ -26,4 +26,16 @@ export class UsersService {
       return convertSuperAgentErrorToResponse(res, err);
     }
   }
+
+  async getUserById(authorization = null, id, res) {
+    try {
+      const { body, status } = await superagent
+        .get(`${this.usersUrl}/${id}`)
+        .set('Authorization', authorization);
+
+      return res.status(status).json(body);
+    } catch (err) {
+      return convertSuperAgentErrorToResponse(res, err);
+    }
+  }
 }
