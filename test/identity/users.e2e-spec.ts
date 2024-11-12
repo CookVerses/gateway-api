@@ -95,7 +95,7 @@ describe('UsersController (e2e)', () => {
       });
     });
 
-    it('should correctly forward the request to the users service and return the correct error response', async () => {
+    it('should correctly forward the request to the users api and return the correct error response', async () => {
       let authorizationHeader: any;
 
       const identityNock = nock(config.USER_API_URL)
