@@ -11,7 +11,7 @@ export class AuthService {
   /**
    * Call the auth API to get the user's token
    *
-   * @param {string} email - the user's email
+   * @param {string} username - the user's username
    * @param {string} password - the user's password
    *
    * @return {object} - the user's token
