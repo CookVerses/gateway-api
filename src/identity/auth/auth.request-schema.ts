@@ -15,3 +15,35 @@ export const loginBodySchema: ApiBodyOptions = {
     },
   },
 };
+
+export const registerBodySchema: ApiBodyOptions = {
+  schema: {
+    type: 'object',
+    properties: {
+      username: {
+        type: 'string',
+        default: 'username',
+      },
+      password: {
+        type: 'string',
+        default: 'password',
+      },
+      firstName: {
+        type: 'string',
+        default: 'firstName',
+      },
+      lastName: {
+        type: 'string',
+        default: 'lastName',
+      },
+      email: {
+        type: 'string',
+        default: 'example@example.com',
+      },
+      gender: {
+        type: 'string',
+        default: 'nam',
+      },
+    },
+  },
+};

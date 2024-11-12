@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import * as superagent from 'superagent';
 
 import { config } from '../../config';
-import { convertSuperAgentErrorToResponse } from 'src/helpers';
+import { convertSuperAgentErrorToResponse } from '../../helpers';
 
 @Injectable()
 export class SubscriptionsService {
