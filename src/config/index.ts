@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import * as dotenv from 'dotenv';
 import * as process from 'process';
 

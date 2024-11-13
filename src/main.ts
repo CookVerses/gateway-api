@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { NestFactory } from '@nestjs/core';
 import { RequestMethod } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
